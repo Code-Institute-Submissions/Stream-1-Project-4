@@ -1,11 +1,13 @@
 		
 		
 			body { 
+				background-color: #7EBEE9;
 				font-size: 14px;
 			}
-		
+							
 			.jumbotron {
 				background-color: lightblue;
+				margin-bottom: 0;
 			}
 
 			.jumbotron h1 a {
@@ -13,23 +15,10 @@
 				text-decoration: none;
 			}
 
-			#main-nav {
-				background: linear-gradient(to left, #A5ADEA 10%, #5A66C4 50%, #263081 100%);
-				margin-bottom: 1rem;		
+			nav {
+				margin-bottom: 1rem;
 			}
 
-			.nav-item {
-				height: 5rem;
-			}
-
-			.nav-link {
-				position: relative;
-				top: 50%;
-				transform: translateY(-50%);		
-				font-size: 1rem;
-				color: black;	
-	 		}
-			
 			.main-footer {
 				background-color: lightblue;
 				color: black;
@@ -45,22 +34,9 @@
 			body {
 				font-size: 18px;
 			}
-
-			#main-nav {
-				margin-bottom: 0;				
-			}
-
+		
 			.jumbotron h1 a {
 				font-size: 5rem;
-			}
-
-			.nav-item {
-				height: 10rem;
-			}
-
-			.nav-link {
-				font-size: 1rem;
-				padding: 0;
 			}
 
 			.main-footer {
@@ -70,11 +46,7 @@
 
 	@media screen and (min-width: 1500px) {
 
-			.nav-link {
-				font-size: 1.5rem;
-			}
-
-		
+					
 	}
 
 		
