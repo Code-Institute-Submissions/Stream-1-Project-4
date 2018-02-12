@@ -6,7 +6,8 @@
 			}
 							
 			.jumbotron {
-				background-color: lightblue;
+				background-image: url(IMG/pexels-photo);
+				background-size: cover;
 				margin-bottom: 0;
 			}
 
