@@ -12,7 +12,23 @@ angular.module("photographer's-site").config(function($locationProvider, $routeP
         
     })
     .when("/gallery", {
-    	templateUrl: "gallery.html",
+        templateUrl: "gallery.html",
+        
+    })
+    .when("/gallery-wedding", {
+        templateUrl: "gallery-wedding.html",
+        
+    })
+    .when("/gallery-party", {
+        templateUrl: "gallery-party.html",
+        
+    })
+    .when("/gallery-event", {
+        templateUrl: "gallery-event.html",
+        
+    })
+    .when("/gallery-portrait", {
+    	templateUrl: "gallery-portrait.html",
     	
     })
     .when("/events", {
