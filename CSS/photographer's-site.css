@@ -6,7 +6,7 @@
 			}
 							
 			.jumbotron {
-				background-image: url(IMG/pexels-photo.jpg);
+				background-image: url(/IMG/pexels-photo-1.jpg);
 				background-size: contain;
 				margin-bottom: 0;
 				color: #fff;
@@ -27,7 +27,7 @@
 			}
 
 			.main-footer {
-				background-color: #60A8DA;
+				background-color: #60A8DAW;
 				color: black;
 				padding: 1rem;
 				margin-top: 2rem;
