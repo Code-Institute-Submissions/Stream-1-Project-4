@@ -17,8 +17,7 @@
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 	<link rel="stylesheet" type="text/css" href="CSS/simplelightbox.css">
 	<link rel="stylesheet" type="text/css" href="CSS/simplelightbox-custom.css">
-	<link rel="stylesheet" type="text/css" href="CSS/photographer's-site.css">	
-	
+	<link rel="stylesheet" type="text/css" href="CSS/photographer's-site.css">		
 	
 </head>
 
@@ -27,20 +26,23 @@
 	<!-- Header -->
 
 	<div class="container">
-		<ul class="nav justify-content-center">
-			<li class="nav-item">
-				<a class="nav-link" href="/gallery">Gallery</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/gallery-wedding">Wedding Gallery</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/gallery-party">Party Gallery</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/gallery-portrait">Portrait Gallery</a>
-			</li>			
-		</ul>
+		<button class="btn m-3" type="button" data-toggle="collapse" data-target="#main-nav" style="background-color: #60A8DA;">Menu</button>
+			<div class="collapse navbar-collapse" id="main-nav">
+				<ul class="nav flex-column flex-md-row justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link" href="/gallery">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/gallery-wedding">Wedding Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/gallery-party">Party Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/gallery-portrait">Portrait Gallery</a>
+					</li>			
+				</ul>
+			</div>
 
 		<!-- Main Section -->
 
