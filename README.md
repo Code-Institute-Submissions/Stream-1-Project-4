@@ -12,11 +12,28 @@
 
 ### How does it function?
 
-## Features
+   The project uses AngularJS and NgRoute to control navigation and form validation.
 
 ## Technology Used 
 
+### Technology in project
+
+- [AngularJS](https://angularjs.org/)
+    **AngularJS** to handle page routing
+- [Bootstrap](http://getbootstrap.com/)
+    **Bootstrap** gives my project a simple, responsive layout
+- [npm](https://www.npmjs.com/)
+    **npm** to help manage some of the dependencies
+- [Bower](https://bower.io/)
+    **Bower** is used to manage the installation of libraries and frameworks
+
 ## Testing
 
+### Tests
+
+
+
 ## Deployment
+
+### Github
 
