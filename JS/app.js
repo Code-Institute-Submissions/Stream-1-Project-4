@@ -1,4 +1,4 @@
-var app = angular.module("photographer's-site", ["ngRoute", "photographerControllers"]);
+var app = angular.module("photographer's-site", ["ngRoute"]);
  
     angular.module("photographer's-site").config(function($locationProvider, $routeProvider) {
         $locationProvider.html5Mode(true);  // Enable href routing without hashes

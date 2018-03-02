@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" np-app="photographer's-site">
+<html lang="en">
 
 <head>
 
@@ -14,18 +14,11 @@
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 	<link rel="stylesheet" type="text/css" href="CSS/photographer's-site.css">
-	<script type="text/javascript">
-		
-		var app = angular.module("photographer's-site", []);
-				app.controller("package-select", function ($scope) {
-				$scope.items = ["Please Select", 'Weddings', 'Party', 'Event'];
-				$scope.package = "Please Select";
-				});
-	</script>
+	
 
 </head>
 
-<body>
+<body np-app="photographer's-site">
 
 		<!-- Header -->
 	
@@ -309,31 +302,31 @@
 								<h3 class="card-header">Events</h3>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">
-										<h4>Sunday 18th March</h4>
+										<h5>Sunday 18th March</h5>
 										<p>East Dorest Wedding Show</p>
 										</li>
 									<li class="list-group-item">
-										<h4>Sunday 15th April</h4>
+										<h5>Sunday 15th April</h5>
 										<p>Great Bristol and Bath Wedding Fair</p>
 										</li>
 									<li class="list-group-item">
-										<h4>Sunday 29th April</h4>
+										<h5>Sunday 29th April</h5>
 										<p>BIG Cornwall Wedding Fayre</p>
 										</li>	
 									<li class="list-group-item">
-										<h4>Sunday 13th May</h4>
+										<h5>Sunday 13th May</h5>
 										<p>Sandy Park Wedding Fair</p>
 										</li>
 									<li class="list-group-item">
-										<h4>Sunday 10th June</h4>
+										<h5>Sunday 10th June</h5>
 										<p>BIG Devon Wedding Fair</p>
 										</li>				
 									<li class="list-group-item">
-										<h4>Sunday 21st October</h4>
+										<h5>Sunday 21st October</h5>
 										<p>BIG Cornwall Wedding Fayre</p>
 										</li>
 									<li class="list-group-item">
-										<h4>Sunday 28th October</h4>
+										<h5>Sunday 28th October</h5>
 										<p>BIG Devon Wedding Fayre</p>
 									</li>						
 								</ul>			
@@ -350,19 +343,6 @@
 
 </body>
 
-
-<!-- <script type="text/javascript">
-		
-	angular.module("photographerControllers", []);
-
-		app.controller("package-select", function ($scope) {
-
-		$scope.items = ["Please Select", 'Weddings', 'Party', 'Event'];
-		$scope.package = "Please Select";
-	
-		});
-
-</script> -->
 
 <script src="JS/app.js"></script>
 <script src="JS/controller.js"></script>
