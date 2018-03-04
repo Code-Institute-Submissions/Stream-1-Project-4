@@ -1,18 +1,18 @@
-var app = angular.module("photographer's-site", ["ngRoute"]);
+var app = angular.module("photographer's-site", ["ngRoute", "photographerControllers", "photographerDirectives"]);
  
-    angular.module("photographer's-site").config(function($locationProvider, $routeProvider) {
+    .config(function($locationProvider, $routeProvider) {
         $locationProvider.html5Mode(true);  // Enable href routing without hashes
      
-        $routeProvider.when("/", {
-            templateUrl: "index.html",
+        $routeProvider.when("/home", {
+            templateUrl: "Templates/home.html",
             
         })
         .when("/about", {
-            templateUrl: "about.hmtl",
+            templateUrl: "Templates/about.hmtl",
             
         })
         .when("/gallery", {
-            templateUrl: "gallery.html",
+            templateUrl: "Templates/gallery.html",
             
         })
         .when("/gallery-wedding", {
@@ -31,17 +31,18 @@ var app = angular.module("photographer's-site", ["ngRoute"]);
         	templateUrl: "gallery-portrait.html",
         	
         })
-        .when("/events", {
-        	templateUrl: "events.html",
+        .when("/event", {
+        	templateUrl: "Templates/event.html",
+            controller: "packageSelect"
         	
         })
-        .when("/contacts", {
-        	templateUrl: "contacts.html",
+        .when("/contact", {
+        	templateUrl: "Templates/contact.html",
 
         })
 
         .otherwise({
-            templateUrl: "index.html",
+           redirectTo "/home",
 
         })
 
