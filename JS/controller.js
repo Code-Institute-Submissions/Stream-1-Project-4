@@ -1,7 +1,8 @@
+angular.module("photographerControllers", [])
 
-	app.controller("package-select", function ($scope) {
+	.controller("packageselect", function ($scope) {
 
-		$scope.items = ["Please Select", 'Weddings', 'Party', 'Event'];
+		$scope.items = ["Please Select", "Weddings", "Party", "Event"];
 		$scope.package = "Please Select";
 	
 		});
