@@ -1,4 +1,4 @@
-photographersSite("photographerControllers", [])
+angular.module("photographerControllers", [])
 
 	.controller("packageselect", function ($scope) {
 
