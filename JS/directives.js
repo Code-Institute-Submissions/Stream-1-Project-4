@@ -1,4 +1,4 @@
-angular.module("photographerDirectives", [])
+photographersSite("photographerDirectives", [])
 
 	.directive("jumbotron", function() {
 		return {
