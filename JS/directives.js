@@ -3,49 +3,49 @@ angular.module("photographerDirectives", [])
 	.directive("jumbotron", function() {
 		return {
 			restrict: "AE",
-			templateUrl: "templates/directives/jumbotron.html"
+			templateUrl: "Templates/Directives/jumbotron.html"
 		};
 	})
 
 	.directive("mainNav", function() {
 	    return {
 	        restrict: "AE",
-	        templateUrl: "templates/directives/mainNav.html"
+	        templateUrl: "Templates/Directives/mainNav.html"
 	    };
 	})
 
 	.directive("mainFooter", function() {
 	    return {
 	        restrict: "AE",
-	        templateUrl: "templates/directives/mainFooter.html"
+	        templateUrl: "Templates/Directives/mainFooter.html"
 	    };
 	})
 	
 	.directive("formSelect", function() {
 		return {
 			restrict: "AE",
-			templateUrl: "templates/directives/formSelect.html"
+			templateUrl: "Templates/Directives/formSelect.html"
 		};
 	})
 
 	.directive("formWedding", function() {
 		return {
 			restrict: "AE",
-			templateUrl: "templates/directives/formWedding.html"
+			templateUrl: "Templates/Directives/formWedding.html"
 		};
 	})
 
 	.directive("formParty", function() {
 		return {
 			restrict: "AE",
-			templateUrl: "templates/directives/formParty.html"
+			templateUrl: "Templates/Directives/formParty.html"
 		};
 	})
 
 	.directive("formEvent", function() {
 		return {
 			restrict: "AE",
-			templateUrl: "templates/directives/formEvent.html"
+			templateUrl: "Templates/Directives/formEvent.html"
 		};
 	});
 
