@@ -2,50 +2,50 @@ angular.module("photographerDirectives", [])
 
 	.directive("jumbotron", function() {
 		return {
-			restrict: "EA",
-			templateUrl: "Templates/Directives/jumbotron.html"
+			restrict: "AE",
+			templateUrl: "templates/Directives/jumbotron.html"
 		};
 	})
 
 	.directive("mainNav", function() {
 	    return {
-	        restrict: "EA",
-	        templateUrl: "Templates/Directives/mainNav.html"
+	        restrict: "AE",
+	        templateUrl: "templates/Directives/mainNav.html"
 	    };
 	})
 
 	.directive("mainFooter", function() {
 	    return {
-	        restrict: "EA",
-	        templateUrl: "Templates/Directives/mainFooter.html"
+	        restrict: "AE",
+	        templateUrl: "templates/Directives/mainFooter.html"
 	    };
 	})
 	
 	.directive("formSelect", function() {
 		return {
-			restrict: "EA",
-			templateUrl: "Templates/Directives/formSelect.html"
+			restrict: "AE",
+			templateUrl: "templates/Directives/formSelect.html"
 		};
 	})
 
 	.directive("formWedding", function() {
 		return {
-			restrict: "EA",
-			templateUrl: "Templates/Directives/formWedding.html"
+			restrict: "AE",
+			templateUrl: "templates/Directives/formWedding.html"
 		};
 	})
 
 	.directive("formParty", function() {
 		return {
-			restrict: "EA",
-			templateUrl: "Templates/Directives/formParty.html"
+			restrict: "AE",
+			templateUrl: "templates/Directives/formParty.html"
 		};
 	})
 
 	.directive("formEvent", function() {
 		return {
-			restrict: "EA",
-			templateUrl: "Templates/Directives/formEvent.html"
+			restrict: "AE",
+			templateUrl: "templates/Directives/formEvent.html"
 		};
 	});
 
