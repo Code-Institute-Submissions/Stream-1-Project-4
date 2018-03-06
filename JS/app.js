@@ -1,4 +1,4 @@
-var app = angular.module("photographer's-site", ["ngRoute", "photographerControllers", "photographerDirectives"]);
+var photographersSite = angular.module("photographersSite", ["ngRoute", "photographerControllers", "photographerDirectives"]);
  
     .config(function($locationProvider, $routeProvider) {
         $locationProvider.html5Mode(true);  // Enable href routing without hashes
@@ -42,7 +42,7 @@ var app = angular.module("photographer's-site", ["ngRoute", "photographerControl
         })
 
         .otherwise({
-           redirectTo "/home",
+            templateUrl: "Templates/home.html",     
 
         })
 
