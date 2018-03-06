@@ -3,15 +3,15 @@ var app = angular.module("photographersSite", ["ngRoute", "photographerControlle
         $locationProvider.html5Mode(true);  // Enable href routing without hashes
      
         $routeProvider.when("/", {
-            templateUrl: "/Templates/home.html",
+            templateUrl: "Templates/home.html",
             
         })
         .when("/about", {
-            templateUrl: "/Templates/about.hmtl",
+            templateUrl: "Templates/about.hmtl",
             
         })
         .when("/gallery", {
-            templateUrl: "/Templates/gallery.html",
+            templateUrl: "Templates/gallery.html",
             
         })
         .when("/gallery-wedding", {
@@ -31,17 +31,17 @@ var app = angular.module("photographersSite", ["ngRoute", "photographerControlle
         	
         })
         .when("/event", {
-        	templateUrl: "/Templates/event.html",
+        	templateUrl: "Templates/event.html",
             controller: "packageSelect"
         	
         })
         .when("/contact", {
-        	templateUrl: "/Templates/contact.html",
+        	templateUrl: "Templates/contact.html",
 
         })
 
         .otherwise({
-            templateUrl: "/Templates/home.html",     
+            templateUrl: "Templates/home.html",     
 
         });
 });
