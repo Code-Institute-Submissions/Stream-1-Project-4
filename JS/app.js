@@ -1,4 +1,4 @@
-angular.module("photographersSite", ["ngRoute", "photographerControllers", "photographerDirectives"])
+angular.module("photographersSite", ["ngRoute", "photographerControllers", "photographerDirectives"]);
   
   angular.module("photographersSite").config(function($locationProvider, $routeProvider) {
         $locationProvider.html5Mode(true);  // Enable href routing without hashes
@@ -8,7 +8,7 @@ angular.module("photographersSite", ["ngRoute", "photographerControllers", "phot
             
         })
         .when("/about", {
-            templateUrl: "Templates/about.hmtl",
+            templateUrl: "Templates/about.html",
             
         })
         .when("/gallery", {
