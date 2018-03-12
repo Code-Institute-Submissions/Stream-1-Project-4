@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 
-<html lang="en" np-app="photographer's-site">
+<html lang="en" >
 
-<head>
+	<head>
 
-	<base href="/">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Wedding Gallery</title>
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- Won't work with simplelightbox <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script> -->
-    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-	<link rel="stylesheet" type="text/css" href="CSS/simplelightbox.css">
-	<link rel="stylesheet" type="text/css" href="CSS/simplelightbox-custom.css">
-	<link rel="stylesheet" type="text/css" href="CSS/photographer's-site.css">	
-	
-</head>
-
-<body>	
+		<base href="/">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 		
-	<!-- Header -->
+		<link rel="stylesheet" type="text/css" href="CSS/simplelightbox.css">
+		<link rel="stylesheet" type="text/css" href="CSS/simplelightbox-custom.css">
+		<link rel="stylesheet" type="text/css" href="CSS/photographer's-site.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
-	<div class="container">
-		<button class="btn m-3" type="button" data-toggle="collapse" data-target="#main-nav" style="background-color: #60A8DA;">Menu</button>
-			<div class="collapse navbar-collapse" id="main-nav">
-				<ul class="nav flex-column flex-md-row justify-content-center">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	    <!-- Won't work with simplelightbox <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script> -->
+	    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	    
+		<title>Wedding Gallery</title>
+		
+	</head>
+
+	<body>
+
+		<div class="jumbotron text-center">
+			<h1><a class="display-3" href="/">Photographer's Site</a></h1>
+			<br>
+			<p>Welcome to my Photographer's Site</p>
+			<br>
+			<p>Click on the photo view it and when you decide what you want head over to the Events to see where I will be or use the package planner.</p>
+		</div>		
+			
+		<nav class="navbar navbar-expand-md navbar-light" style="background-color: #60A8DA;">
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"	data-target="#mainNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-center" id="mainNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about">About</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/gallery">Gallery</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/gallery-party">Party Gallery</a>
+						<a class="nav-link" href="/events">Events</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/gallery-event">Event Gallery</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/gallery-portrait">Portrait Gallery</a>
-					</li>			
-				</ul>
-			</div>
+						<a class="nav-link" href="/contacts">Contact</a>
+					</li>	
+				</ul>				
+			</div>			
+		</nav>
 
-		<!-- Main Section -->
-
+		<nav>
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Wedding</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Party</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Event</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Portrait</a>
+				</li>
+			</ul>
+		</nav>
+		
 		<h3 class="align-center">Wedding Gallery</h3>
 		<div class="gallery">
 			<a href="/IMG/Wedding Gallery/pexels-gallery-wedding-1.jpeg">
@@ -81,11 +110,9 @@
 	</div>
 	
 
-</body>
+	</body>
 
-<script type="text/javascript" src="JS/simple-lightbox.js"></script>
-<script type="text/javascript" src="JS/simplelightbox-events.js"></script>
-<script type="text/javascript" src="JS/app.js"></script>
-<script type="text/javascript" src="JS/controller.js"></script>
+	<script type="text/javascript" src="JS/simple-lightbox.js"></script>
+	<script type="text/javascript" src="JS/simplelightbox-events.js"></script>
 
 </html>
