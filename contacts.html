@@ -29,7 +29,7 @@
 			<p>When you have decided what you would like you can get in touch with me or if you have already used my service please leave a testimonial.</p>
 		</div>
 				
-		<nav class="navbar navbar-expand-md navbar-light" style="background-color: #60A8DA;">
+		<nav class="navbar navbar-expand-md" style="background-color: #60A8DA;">
 			<a class="navbar-brand" href="#"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"	data-target="#mainNav">
 				<span class="navbar-toggler-icon"></span>
@@ -102,19 +102,17 @@
 									<div class="form-group row">
 										<div class="form-group col-sm-6">
 											<label for="testName">Name</label>
-											<input id="testName" type="text" name="testName" ng-model="testName" class="form-control" placeholder="Name" required>
-											<span ng-show="testimonial.testName.$pristine">Your name is required.</span>
+											<input id="testName" type="text" name="testName" class="form-control" placeholder="Name" required>											
 										</div>									
 										<div class="form-group col-sm-6">
 											<label for="testLocation">Location</label>
-											<input id="testLocation" type="text" name="location" ng-model="location" class="form-control" placeholder="Location" required>
-											<span ng-show="testimonial.location.$pristine">Address is required.</span>	
+											<input id="testLocation" type="text" name="location" class="form-control" placeholder="Location" required>											
 										</div>
 									</div>
 									<div class="form-group row">
 										<div class="form-group col-sm-12">
 											<label for="testimonial">Your Testimonial</label>
-											<textarea id="testimonial" class="form-control" rows="3"></textarea>
+											<textarea id="testimonial" class="form-control" rows="3" value="testText" required></textarea>
 										</div>
 									</div>
 									<div class="col-md-12 row justify-content-center">

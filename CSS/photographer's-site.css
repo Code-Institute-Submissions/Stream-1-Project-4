@@ -7,7 +7,7 @@
 							
 			.jumbotron {
 				background-image: url(/IMG/pexels-photo-1.jpg);
-				background-size: contain;
+				background-size: 100% 100%;
 				margin-bottom: 0;
 				color: #fff;
 			}
@@ -22,8 +22,38 @@
 				margin-bottom: 1rem;
 			}
 
+			.nav-link {
+				text-decoration: none;
+				color: #fff;
+			}
+
 			.card {
 				margin-bottom: 1rem;
+			}
+
+			.gallery-header {
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+
+			.gallery {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.column {
+				flex: 50%;
+    			max-width: 50%;
+			}
+
+			.gallery a img {
+				flex: 50%;	
+				width: 100%;			
+				height: auto;
+				border:2px solid #7EBEE9;
+
 			}
 
 			.main-footer {
