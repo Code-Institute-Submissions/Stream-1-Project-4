@@ -3,10 +3,11 @@
 			body { 
 				background-color: #7EBEE9;
 				font-size: 14px;
+				font-family: 'Josefin Sans', sans-serif;
 			}
 							
 			.jumbotron {
-				background-image: url(/IMG/pexels-photo-1.jpg);
+				background-image: url(/IMG/pexels-photo-3.jpg);
 				background-size: 100% 100%;
 				margin-bottom: 0;
 				color: #fff;
@@ -27,13 +28,32 @@
 				color: #fff;
 			}
 
+			.card-header {
+				background-color: #60A8DA;
+				border-radius: 0;
+			}
+
+			.card-header:first-child {				
+				border-radius: 0;
+			}
+
+			.card-img-top {
+				border-radius: 0;
+			}
+			
+			.card-img-top {
+				border-radius: 0;
+			}
+
 			.card {
 				margin-bottom: 1rem;
+				border: 5px solid #60A8DA				
 			}
 
 			.gallery-header {
 				text-align: center;
 				margin-bottom: 2rem;
+				color: #fff;
 			}
 
 			.gallery {
@@ -52,8 +72,37 @@
 				flex: 50%;	
 				width: 100%;			
 				height: auto;
-				border:2px solid #7EBEE9;
+				border: 2px solid #7EBEE9;
+			}
 
+			.package-header {
+				margin: 2rem 4rem;
+			}
+
+			.event-btn {
+				background-color: #60A8DA;
+				padding: 0.5rem 2rem;
+				margin: 0.25rem 0.25rem;				
+			}
+
+			.submit-btn {
+				background-color: #60A8DA;
+				padding: 0.5rem 2rem;
+				margin: 0.25rem 0.25rem;				
+			}
+
+
+			.event-select {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.hidden {
+				display: none;
+			}
+
+			#testMessage {
+				padding: 1rem 2rem;
 			}
 
 			.main-footer {
@@ -65,28 +114,54 @@
 				font-size: 14px;
 			}
 
+	@media screen and (min-width: 768px) {
+
+			body {
+				font-size: 16px;
+			}
+
+			.jumbotron {
+				background-image: url(/IMG/pexels-photo-2.jpg);
+				background-size: 100% 100%;
+				margin-bottom: 0;
+				color: #fff;
+			}
+
+			.event-select {
+				display: flex;
+				flex-direction: row;				
+			}
+
+		}
+
 
 	@media screen and (min-width: 1200px) {
 
 			body {
 				font-size: 18px;
 			}
+
+			.jumbotron {
+				background-image: url(/IMG/pexels-photo-1.jpg);
+				background-size: 100% 100%;
+				margin-bottom: 0;
+				color: #fff;
+			}
 		
 			.jumbotron h1 a {
 				font-size: 5rem;
+			}
+
+			.about-title {
+				padding-bottom: 2rem;
+			}
+
+			.about {
+				padding: 4rem 4rem 6rem 4rem; 
+				line-height: 2;
 			}
 
 			.main-footer {
 				font-size: 16px;
 			}
 		}
-
-	@media screen and (min-width: 1500px) {
-
-					
-	}
-
-		
-		
-		
-	
