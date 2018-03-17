@@ -9,11 +9,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="CSS/photographer's-site.css">
 
 	    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 	    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>	    
-		<script src="JS/scripts.js"></script>
+		<script type="text/javascript" src="JS/scripts.js"></script>
 
 		<title>Events</title>		
 
@@ -29,7 +30,7 @@
 			<p>Take a look at the Package Planner to customize your experience or have a look at the list of events where I will be if you want to talk in person.</p>
 		</div>
 		
-		<nav class="navbar navbar-expand-md" style="background-color: #60A8DA;">
+		<nav class="navbar navbar-expand-md navbar-light" style="background-color: #60A8DA;">
 			<a class="navbar-brand" href="#"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"	data-target="#mainNav">
 				<span class="navbar-toggler-icon"></span>
@@ -66,24 +67,20 @@
 								<div class="card-body">
 									<form>
 										<div class="form-group row">											
-											<label class="col-md-2 col-form-label">Choose a package</label>
-											<div class=" form-group col-md-8">						
-												<select class="form-control">
-													<option value="0" selected disabled>Please Select</option>														
-													<option value="1">Weddings</option>														
-													<option value="2">Party</option>														
-													<option value="3">Event</option>														
-												</select>
+											<label class="col-md-4 col-form-label">Choose a package</label>
+											<div class="col-md-6 event-select">						
+												<button id="wedding" class="btn event-btn">Wedding</button>
+												<button id="party" class="btn event-btn">Party</button>
+												<button id="event" class="btn event-btn">Event</button>
 											</div>											
 										</div>
-									</form>								
-									<br>		
-									
-									<div>
+									</form>
+
+									<div class="package-header">
 										<p class="text-center">Welcome to the Package Planner. Here you can customize a package to suit your needs what ever the occasion. To get started just choose a package from above.</p>
 									</div>
 
-									<div>
+									<div id="weddingForm" class="hidden">
 										<form name="packageForm" novalidate>
 											<legend>Weddings</legend>
 											<br>
@@ -133,12 +130,12 @@
 												</div>
 											</div>
 											<div class="col-md-12 row justify-content-center">
-												<button class="btn" type="submit" style="background-color: #60A8DA;">Submit</button>															
+												<button id="packageSubmit" class="btn submit-btn" type="submit">Submit</button>															
 											</div>		
 										</form>
 									</div>
 
-									<div>
+									<div id="partyForm" class="hidden">
 										<form name="packageForm" novalidate>
 											<legend>Party</legend>
 											<br>
@@ -189,12 +186,12 @@
 												</div>
 											</div>
 											<div class="col-md-12 row justify-content-center">
-												<button class="btn" type="submit" style="background-color: #60A8DA;">Submit</button>															
+												<button id="packageSubmit" class="btn submit-btn" type="submit">Submit</button>															
 											</div>		
 										</form>
 									</div>
 
-									<div>
+									<div id="eventForm" class="hidden">
 										<form name="packageForm" novalidate>
 											<legend>Event</legend>
 											<br>
@@ -245,7 +242,7 @@
 												</div>
 											</div>
 											<div class="col-md-12 row justify-content-center">
-												<button class="btn" type="submit" style="background-color: #60A8DA;">Submit</button>															
+												<button id="packageSubmit" class="btn submit-btn" type="submit">Submit</button>															
 											</div>		
 										</form>
 									</div>										
