@@ -53,8 +53,8 @@
 					<li class="nav-item">
 						<a class="nav-link" href="/contacts">Contact</a>
 					</li>	
-				</ul>				
-			</div>			
+				</ul>
+			</div>
 		</nav>
 
 		<div class="container-fluid">
@@ -66,13 +66,13 @@
 								<h4 class="card-header">Package Planner</h4>
 								<div class="card-body">
 									<form>
-										<div class="form-group row">											
+										<div class="form-group row">
 											<label class="col-md-4 col-form-label">Choose a package</label>
-											<div class="col-md-6 event-select">						
-												<button id="wedding" class="btn event-btn">Wedding</button>
-												<button id="party" class="btn event-btn">Party</button>
-												<button id="event" class="btn event-btn">Event</button>
-											</div>											
+											<div class="col-md-6 event-select">
+												<button value="wedding" class="btn event-btn">Wedding</button>
+												<button value="party" class="btn event-btn">Party</button>
+												<button value="event" class="btn event-btn">Event</button>
+											</div>
 										</div>
 									</form>
 
@@ -80,172 +80,181 @@
 										<p class="text-center">Welcome to the Package Planner. Here you can customize a package to suit your needs what ever the occasion. To get started just choose a package from above.</p>
 									</div>
 
-									<div id="weddingForm" class="hidden">
-										<form name="packageForm" novalidate>
+									<div id="wedding" class="hidden">
+										<form class="packageForm" id="weddingForm" novalidate>
 											<legend>Weddings</legend>
 											<br>
 											<div class="form-group row">
 												<label for="photo-wedding" class="col-md-2 col-form-label">Photos</label>
-												<div class="form-group col-md-8">					
+												<div class="form-group col-md-8">
 													<select id="photo-wedding" name="photo-wedding" class="form-control">
 														<option value="1">No Photos</option>
 														<option value="2">Ceremony Only</option>
 														<option value="3">Half Day</option>
-														<option value="4">Full Day</option>									
-													</select>											
-												</div>										
-											</div>							
+														<option value="4">Full Day</option>
+													</select>
+												</div>
+											</div>
 											<div class="form-group row">
 												<label for="video-wedding" class="col-md-2 col-form-label">Video</label>
-												<div class="form-group col-md-8">					
+												<div class="form-group col-md-8">
 													<select id="video-wedding" name="video-wedding" class="form-control">
 														<option value="1">No Video</option>
 														<option value="2">Ceremony Only</option>
 														<option value="3">Half Day</option>
 														<option value="4">Full Day</option>
-													</select>											
-												</div>										
-											</div>							
+													</select>
+												</div>
+											</div>
 											<div class="form-group row">
 												<label for="album-wedding" class="col-md-2 col-form-label">Photo Album</label>
-												<div class="form-group col-md-8">					
+												<div class="form-group col-md-8">
 													<select id="album-wedding" name="album-wedding" class="form-control">
 														<option value="1">No Photo Album</option>
 														<option value="2">Access to Online/CD Album </option>
 														<option value="3">Photo Book 50 Photos</option>
-														<option value="4">Photo Book 100 Photos</option>																
-													</select>									
-												</div>														
-											</div>
-											<div class="form-group row">
-												<label for="name" class="col-md-2 col-form-label">Name:</label>
-												<div class="form-group col-md-8">
-													<input id="name" class="form-control" type="text" name="name" placeholder="Your Name" required>									
+														<option value="4">Photo Book 100 Photos</option>
+													</select>
 												</div>
 											</div>
 											<div class="form-group row">
-												<label for="address" class="col-md-2 col-form-label">Address of Wedding:</label>
+												<label for="weddingName" class="col-md-2 col-form-label">Name:</label>
 												<div class="form-group col-md-8">
-													<input id="address" class="form-control" type="text" name="address" placeholder="Address of Wedding" required>						
+													<input id="weddingName" class="form-control" type="text" name="name" value="" placeholder="Your Name" required>
+													<div class="error">Please enter your name eg. John Smith</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="weddingAddress" class="col-md-2 col-form-label">Address of Wedding:</label>
+												<div class="form-group col-md-8">
+													<input id="weddingAddress" class="form-control" type="text" name="address" value="" placeholder="Address of Wedding" required>
+													<div class="error">Please enter address of wedding</div>
 												</div>
 											</div>
 											<div class="col-md-12 row justify-content-center">
-												<button id="packageSubmit" class="btn submit-btn" type="submit">Submit</button>															
-											</div>		
+												<button class="btn submit-btn" type="submit">Submit</button>												
+											</div>
+											<div class="message"></div>
 										</form>
 									</div>
 
-									<div id="partyForm" class="hidden">
-										<form name="packageForm" novalidate>
+									<div id="party" class="hidden">
+										<form class="packageForm" id="partyForm" novalidate>
 											<legend>Party</legend>
 											<br>
 											<div class="form-group row">
 												<label for="photo-party" class="col-md-2 col-form-label">Photos</label>
-												<div class="form-group col-md-8">					
+												<div class="form-group col-md-8">
 													<select id="photo-party" name="photo-party" class="form-control">
 														<option value="1">No Photos</option>
 														<option value="2">Half Day</option>
 														<option value="3">Half Day + Photo Booth</option>
 														<option value="4">Full Day</option>
 														<option value="5">Full Day + Photo Booth</option>
-													</select>											
-												</div>										
-											</div>							
+													</select>
+												</div>
+											</div>
 											<div class="form-group row">
 												<label for="video-party" class="col-md-2 col-form-label">Video</label>
-												<div class="form-group col-md-8">					
+												<div class="form-group col-md-8">
 													<select id="video-party" name="video-party" class="form-control">
 														<option value="1">No Video</option>
 														<option value="2">Video Messages</option>
 														<option value="3">Half Day</option>
 														<option value="4">Full Day</option>
-													</select>											
-												</div>										
-											</div>							
+													</select>
+												</div>
+											</div>
 											<div class="form-group row">
 												<label for="album-party" class="col-md-2 col-form-label">Photo Album</label>
-												<div class="form-group col-md-8">					
+												<div class="form-group col-md-8">
 													<select id="album-party" name="album-party" class="form-control">
 														<option value="1">No Photo Album</option>
 														<option value="2">Access to Online/CD Album </option>
 														<option value="3">Photo Book 50 Photos</option>
-														<option value="4">Photo Book 100 Photos</option>			
-													</select>									
-												</div>					
-											</div>
-											<div class="form-group row">
-												<label for="name" class="col-md-2 col-form-label">Name:</label>
-												<div class="form-group col-md-8">
-													<input id="name" class="form-control" type="text" name="name" placeholder="Your Name" required>												
+														<option value="4">Photo Book 100 Photos</option>
+													</select>
 												</div>
 											</div>
 											<div class="form-group row">
-												<label for="address" class="col-md-2 col-form-label">Address of Party:</label>
+												<label for="partyName" class="col-md-2 col-form-label">Name:</label>
 												<div class="form-group col-md-8">
-													<input id="address" class="form-control" type="text" name="address" placeholder="Address of Wedding" required>							
+													<input id="partyName" class="form-control" type="text" name="name" value="" placeholder="Your Name" required>
+													<div class="error">Please enter your name eg. John Smith</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="partyAddress" class="col-md-2 col-form-label">Address of Party:</label>
+												<div class="form-group col-md-8">
+													<input id="partyAddress" class="form-control" type="text" name="address" value="" placeholder="Address of Party" required>
+													<div class="error">Please enter address of party</div>
 												</div>
 											</div>
 											<div class="col-md-12 row justify-content-center">
-												<button id="packageSubmit" class="btn submit-btn" type="submit">Submit</button>															
-											</div>		
+												<button class="btn submit-btn" type="submit">Submit</button>												
+											</div>
+											<div class="message"></div>
 										</form>
 									</div>
 
-									<div id="eventForm" class="hidden">
-										<form name="packageForm" novalidate>
+									<div id="event" class="hidden">
+										<form class="packageForm" id="eventForm" novalidate>
 											<legend>Event</legend>
 											<br>
 											<div class="form-group row">
 												<label for="photo-event" class="col-md-2 col-form-label">Photos</label>
-												<div class="form-group col-md-8">					
+												<div class="form-group col-md-8">
 													<select id="photo-event" name="photo-event" class="form-control">
 														<option value="1">No Photos</option>
 														<option value="2">Half Day</option>
 														<option value="3">Half Day + Photo Booth</option>
 														<option value="4">Full Day</option>
 														<option value="5">Full Day + Photo Booth</option>
-													</select>											
-												</div>										
-											</div>							
+													</select>
+												</div>
+											</div>
 											<div class="form-group row">
 												<label for="video-event" class="col-md-2 col-form-label">Video</label>
-												<div class="form-group col-md-8">					
+												<div class="form-group col-md-8">
 													<select id="video-event" name="video-event" class="form-control">
 														<option value="1">No Video</option>
 														<option value="2">Video Messages</option>
 														<option value="3">Half Day</option>
 														<option value="4">Full Day</option>
-													</select>											
-												</div>										
-											</div>							
+													</select>
+												</div>
+											</div>
 											<div class="form-group row">
 												<label for="album-event" class="col-md-2 col-form-label">Photo Album</label>
-												<div class="form-group col-md-8">					
+												<div class="form-group col-md-8">
 													<select id="album-event" name="album-event" class="form-control">
 														<option value="1">No Photo Album</option>
 														<option value="2">Access to Online/CD Album </option>
 														<option value="3">Photo Book 50 Photos</option>
-														<option value="4">Photo Book 100 Photos</option>		
-													</select>									
-												</div>					
-											</div>
-											<div class="form-group row">
-												<label for="name" class="col-md-2 col-form-label">Name:</label>
-												<div class="form-group col-md-8">
-													<input id="name" class="form-control" type="text" name="name" placeholder="Your Name" required>										
+														<option value="4">Photo Book 100 Photos</option>
+													</select>
 												</div>
 											</div>
 											<div class="form-group row">
-												<label for="address" class="col-md-2 col-form-label">Address of Event:</label>
+												<label for="eventName" class="col-md-2 col-form-label">Name:</label>
 												<div class="form-group col-md-8">
-													<input id="address" class="form-control" type="text" name="address" placeholder="Address of Wedding" required>							
+													<input id="eventName" class="form-control" type="text" name="name" value="" placeholder="Your Name" required>
+													<div class="error">Please enter your name eg. John Smith</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="eventAddress" class="col-md-2 col-form-label">Address of Event:</label>
+												<div class="form-group col-md-8">
+													<input id="eventAddress" class="form-control" type="text" name="address" value="" placeholder="Address of Event" required>
+													<div class="error">Please enter address of event</div>
 												</div>
 											</div>
 											<div class="col-md-12 row justify-content-center">
-												<button id="packageSubmit" class="btn submit-btn" type="submit">Submit</button>															
-											</div>		
+												<button class="btn submit-btn" type="submit">Submit</button>
+											</div>
+											<div class="message"></div>
 										</form>
-									</div>										
+									</div>
 								</div>
 							</div>
 							
@@ -255,29 +264,29 @@
 									<div class="card">
 										<h4 class="card-header">Testimonials</h4>
 										<ul class="list-group list-group-flush">
-											<li class="list-group-item">										
+											<li class="list-group-item">
 												<p>Professional and quality photos would recommend to a friend.</p>
-												<footer class="text-muted"> - Tom, London</footer>										
+												<footer class="text-muted"> - Tom, London</footer>
 											</li>
 											<li class="list-group-item">
 												<p>Really happy with the service you provided you were excellent on the day and the photos really capture the day.</p>
 												<footer class="text-muted"> - Amy, London</footer>
 											</li>
-											<li class="list-group-item">										
+											<li class="list-group-item">
 												<p>Thank you so much! You made the day look amazing as it was despite the weather. Definitely recommending to family.</p>
-												<footer class="text-muted"> - Harry, London</footer>										
+												<footer class="text-muted"> - Harry, London</footer>
 											</li>
 											<li class="list-group-item">
 												<p>Wow! Brilliant photographer you are amazing. My event was a success thanks to the photos you provided and your work on the day, Thank you.</p>
-												<footer class="text-muted"> - Hannah, London</footer>										
+												<footer class="text-muted"> - Hannah, London</footer>
 											</li>
-										</ul>									
-									</div>								
-								</div>						
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>					
+				</div>
 
 				<div class="col-lg-4">
 					<div class="card">
@@ -294,7 +303,7 @@
 							<li class="list-group-item">
 								<h5>Sunday 29th April</h5>
 								<p>BIG Cornwall Wedding Fayre</p>
-								</li>	
+								</li>
 							<li class="list-group-item">
 								<h5>Sunday 13th May</h5>
 								<p>Sandy Park Wedding Fair</p>
@@ -302,7 +311,7 @@
 							<li class="list-group-item">
 								<h5>Sunday 10th June</h5>
 								<p>BIG Devon Wedding Fair</p>
-								</li>				
+								</li>
 							<li class="list-group-item">
 								<h5>Sunday 21st October</h5>
 								<p>BIG Cornwall Wedding Fayre</p>
@@ -310,17 +319,15 @@
 							<li class="list-group-item">
 								<h5>Sunday 28th October</h5>
 								<p>BIG Devon Wedding Fayre</p>
-							</li>						
-						</ul>			
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>					
-				
-	
-		
+		</div>
+
 		<footer class="main-footer">
-			<p class="container">Photographer's Site by Tom McNally</p>				
+			<p class="container">Photographer's Site by Tom McNally</p>
 		</footer>
 
 	</body>
