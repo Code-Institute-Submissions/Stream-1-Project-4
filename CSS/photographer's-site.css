@@ -91,7 +91,6 @@
 				margin: 0.25rem 0.25rem;				
 			}
 
-
 			.event-select {
 				display: flex;
 				flex-direction: column;
@@ -101,8 +100,16 @@
 				display: none;
 			}
 
-			#testMessage {
+			.error {
+				display: none;
+				color: red;
+				margin: 0.5rem 0.5rem 0 0.5rem;
+			}
+
+			.message {
+				display: none;
 				padding: 1rem 2rem;
+				background-color: lightgreen;
 			}
 
 			.main-footer {
