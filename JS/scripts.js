@@ -38,7 +38,7 @@
 				$(addr).next(".error").slideDown(1000);
 			} else {
 				$(".error").hide();
-				$(".message").show().text("Hello " + nameVal + " if this was real your package would have been delivered");
+				$(".message").show().text("Hello " + nameVal + ", if this was real your package would have been delivered");
 				$(".submit-btn").attr("disabled", true);
 			};
 			
@@ -59,10 +59,10 @@
 				$("#testLocation").next(".error").slideDown(1000);
 			} else {
 				$(".error").hide();
-				$(".message").show().text("Hello " + testName + " from " + testLocation + " if this was real your message would have been delivered");				
+				$(".message").show().text("Hello " + testName + " from " + testLocation + ", if this was real your message would have been delivered");				
 			};			
 		});
-		
+
 	});
 
 

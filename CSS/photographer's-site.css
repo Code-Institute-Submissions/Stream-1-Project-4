@@ -76,7 +76,7 @@
 			}
 
 			.package-header {
-				margin: 2rem 4rem;
+				margin: 2rem 2rem;
 			}
 
 			.event-btn {
@@ -166,6 +166,10 @@
 			.about {
 				padding: 4rem 4rem 6rem 4rem; 
 				line-height: 2;
+			}
+
+			.package-header {
+				margin: 2rem 4rem;
 			}
 
 			.main-footer {
