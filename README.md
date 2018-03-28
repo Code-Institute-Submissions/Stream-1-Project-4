@@ -29,7 +29,7 @@ The project uses JQuery for form validation and custom functions.
 
 ### Tests
 
-Testing can be found in [Tests](/tests/)
+Testing can be found in [Tests](/tests.pdf/)
 
 ## References
 
