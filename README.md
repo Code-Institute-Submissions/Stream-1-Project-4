@@ -12,18 +12,16 @@ The project has 5 pages which can be navigated through using the main nav.  Ther
 
 ### How does it function?
 
-The project uses JQuery for form validation and custom functions.
+The project uses JQuery for form validation on the package planner and testimonials forms which won't be accepted if empty or the wrong patern. There are also some custom functions for displaying only one form in the package planner
 
 ## Technology Used 
 
-### Technology in project
-
 - [Bootstrap](http://getbootstrap.com/)
-    **Bootstrap** gives my project a simple, responsive layout
+    - **Bootstrap** gives my project a simple, responsive layout
 - [npm](https://www.npmjs.com/)
-    **npm** to help manage some of the dependencies
+    - **npm** to help manage some of the dependencies
 - [Bower](https://bower.io/)
-    **Bower** is used to manage the installation of libraries and frameworks
+    - **Bower** is used to manage the installation of libraries and frameworks
 
 ## Testing
 
