@@ -7,11 +7,12 @@ body {
 .jumbotron {
 	background-image: url(/IMG/pexels-photo-3.jpg);
 	background-size: 100% 100%;
-	background-color: #000;
+	background-color: #666666;
+	background-blend-mode: hard-light;
 	margin-bottom: 0;
 	color: #fff;
 	border-radius: 0;
-	opacity: 0.6;
+	
 }
 
 .jumbotron h1 a {
@@ -112,8 +113,11 @@ nav {
 	padding: 1rem;
 	margin-top: 2rem;
 	text-align: center;
-	font-size: 14px;
-	vertical-align: middle;
+	font-size: 14px;	
+}
+
+.main-footer p {
+	margin-top: 1rem;
 }
 
 @media screen and (min-width: 768px) {
