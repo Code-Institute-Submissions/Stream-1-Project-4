@@ -4,15 +4,22 @@
 
 ### What is the project?
 
-This project is a Photographer's Page to showcase their photos and work to the public. The project has several pages which show a range of different technologies and languages. 
+This project is a Photographer's Page to showcase their photos and work to the
+public. The project has several pages which show a range of different technologies and languages. 
 
 ### What can you do?
 
-The project has 5 pages which can be navigated through using the main nav.  There is a carousel that exhibits some of the best photos on the Home. The Gallery is where the majority of photos can be viewed using simplelightbox. The Event page has a Package Planner which can be used to select different packages. The Contacts page has contact info and a testimonials form.
+The project has 5 pages which can be navigated through using the main nav.
+There is a carousel that exhibits some of the best photos on the Home. The Gallery
+is where the majority of photos can be viewed using simplelightbox. The Event 
+page has a Package Planner which can be used to select different packages. The
+Contacts page has contact info and a testimonials form.
 
 ### How does it function?
 
-The project uses JQuery for form validation on the package planner and testimonials forms which won't be accepted if empty or the wrong patern. There are also some custom functions for displaying only one form in the package planner
+The project uses JQuery for form validation on the package planner and 
+testimonials forms which won't be accepted if empty or the wrong patern. There
+are also some custom functions for displaying only one form in the package planner
 
 ## Technology Used 
 

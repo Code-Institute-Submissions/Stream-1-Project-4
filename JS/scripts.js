@@ -62,9 +62,11 @@ $(document).ready(function() {
 		} else {
 			$(".error").hide();
 			$(".message").show().text("Hello " + testName + " from " + testLocation + ", if this was real your message would have been delivered");				
-		};			
+		}			
 	});
+
 });
+
 
 
 	
