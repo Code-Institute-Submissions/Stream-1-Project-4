@@ -41,7 +41,7 @@ $(document).ready(function() {
 			$(".error").hide();
 			$(".message").show().text("Hello " + nameVal + ", if this was real your package would have been delivered");
 			$(".submit-btn").attr("disabled", true);
-		};
+		}
 		
 	});
 
@@ -64,9 +64,7 @@ $(document).ready(function() {
 			$(".message").show().text("Hello " + testName + " from " + testLocation + ", if this was real your message would have been delivered");				
 		}			
 	});
-
 });
-
 
 
 	
