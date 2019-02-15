@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 		var form = $(this).val();
 
-		$(".hidden").css("display", "none")
+		$(".hidden").css("display", "none");
 		$("#" + form).toggle();
 	});
 
@@ -65,6 +65,3 @@ $(document).ready(function() {
 		}			
 	});
 });
-
-
-	
