@@ -25,11 +25,12 @@ As a User I would want to be:
 - able to leave a testimonial, to let them know what I think
 
 Mock ups can be viewed for each page below:
-- [Index](/Mock ups/Project 1 Mock Up HOME.jpg)
-- [About](/Mock ups/Project 1 Mock Up ABOUT.jpg)
-- [Gallery](/Mock ups/Project 1 Mock Up GALLERY.jpg)
-- [Events](/Mock ups/Project 1 Mock Up EVENTS.jpg)
-- [Contact](/Mock ups/Project 1 Mock Up CONTACTS.jpg)
+- [Index](/mock_ups/index.jpg)
+- [About](/mock_ups/about.jpg)
+- [Gallery](/mock_ups/gallery.jpg)
+- [Events](/mock_ups/events.jpg)
+- [Contact](/mock_ups/contacts.jpg)
+
 
 ## Features
 
